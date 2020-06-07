@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>CSS Grid Practice</title>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <!--This sets the container for the entire grid, the box that goes around the whole thing-->
+        <div class="grid-item grid-item1">
+            <!--each box of the grid is labeled with a class of grid-item(1,2,3,4,5,6,7). HTML shows which grid box is what in parenthesese-->
+            <img class='target' src="target-header.gif" width=300px height=100px>
+        </div>
+        <div class="grid-item grid-item2">
+            <!--this is where I'd like to scan an array for # of times a product has been added and add it as a frequent item-->
+            <h3>Frequently added items: (2)</h3>
+            <ul>
+                <li class="frequent"></li>
+            </ul>
+        </div>
+        <div class="grid-item grid-item3">
+            <!--The area where items are added. They will invisibly be pushed to an all-time array for the frequently added items part-->
+            <ul class="main-list">
+                <li>Bananas (3)</li>
+            </ul> <br><br>
+
+            <form>
+                <div class="question">
+                    <input placeholder="Add Item" type="text" required="">
+                </div>
+            </form>
+            <br><br>
+            <div class="col-md-3 col-sm-3 col-xs-6"> <a href="#" class="btn btn-sm animated-button thar-one">Clear
+                    Items</a> </div>
+
+
+
+        </div>
+        <div class="grid-item grid-item4">
+            <!--This is well beyond my current scope but I'm pretty sure we can use API's to scrape pricing data from Walmart and put it here-->
+            <h3>Price:</h3>
+            <ul>
+                <li>
+                    $2.99 (4)
+                </li>
+            </ul>
+        </div>
+        <div class="grid-item grid-item5">
+            <!--This is where you can add selected frequently added items to be added into the current list-->
+            <div class="col-md-3 col-sm-3 col-xs-6"> <a href="#" class="btn btn-sm animated-button thar-one side">Add
+                    Selected</a> </div>
+        </div>
+        <div class="grid-item grid-item6">
+            <!--Total items (self explanatory)-->
+            Total Items: 25 (6)
+        </div>
+        <div class="grid-item grid-item7">
+            <!--Total price, also self-explanatory-->
+            Total Price: $143.76 (7)
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+
+html, body {
+    height:100vh;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:#DDDDDD;
+}
+
+input{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: white
+}
+input:focus {
+    outline:none;
+}
+
+.grid-container{
+    height:100%;
+    width:80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom:20px;
+    display:grid;
+    grid-gap: 20px;
+    grid-template-columns: 1.5fr 6fr 2fr;
+    grid-template-rows: 8em 6fr 1fr;
+    grid-template-areas: "header header header"
+   "sidebar main last"
+   "sidebar main last"
+   "sidebar main last"
+   "sidebar main last"
+   "sidebar main last"
+   "sidebar main last"
+    
+    
+
+}
+
+.grid-item{
+    background-color:blue;
+    color: Black;
+    padding: 40px;
+}
+
+.grid-item1{
+    grid-area:header;
+    background-image:url("Target.jpg");
+    background-size:cover;
+    background-repeat:repeat-x;
+    display: inline-block;
+    display: flex; 
+    align-items: center;
+    }
+
+
+.grid-item2{
+   grid-area:sidebar;
+    background-color: #e8faf8;
+    color:black;
+    border-right: 1.5px solid #d91f34;
+}
+
+.grid-item3{
+    grid-area:main;
+    background-color:white;
+}
+
+.grid-item4{
+    grid-area:last;
+    background-color: white;
+    border-left:1.5px solid #d91f34;
+}
+
+.grid-item5{
+    background-color: #e8faf8;
+    border-right: 1.5px solid #d91f34;
+}
+
+.grid-item6{
+    background-color:white;
+    border-top:1.5px dotted #d91f34;
+    font-size: 4em;
+    text-align:center;
+}
+
+.grid-item7{
+    background-color:white;
+    border-left:1.5px solid #d91f34;
+    border-top:1.5px dotted #d91f34;
+    font-size: 25px;
+    text-align:center;
+}
+
+
+a.animated-button.thar-one {
+    margin-top:50px;
+    color: black;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: 2px solid  #d91f34;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+a.animated-button.thar-one:hover {
+    color:  black !important;
+    background-image: url("Target.jpg")
+    text-shadow: none;
+    transition: 1000ms;
+}a.animated-button.thar-one .side :hover {
+    color:  black !important;
+    
+    text-shadow: none;
+    transition: 1000ms;
+}
+
+a.animated-button.thar-one:hover:before {
+    bottom: 0%;
+    top: auto;
+    height: 100%;
+}
+a.animated-button.thar-one:before {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 0px;
+    width: 100%;
+    z-index: -1;
+    content: '';
+    color: #000 !important;
+    background: #F7CA18;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
